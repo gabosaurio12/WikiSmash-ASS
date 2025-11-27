@@ -1,0 +1,51 @@
+
+.head {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 24pt;
+    color: rgb(178, 247, 255);
+    display: flex;
+}
+
+.title {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 20pt;
+    color: rgb(128, 231, 221);
+}
+
+.intro {
+    font-family: "Comic Sans MS", cursive;
+    color: rgb(162, 232, 225);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchSection {
+    text-align: right;
+    align-items: end;
+}
+
+body {
+    background-color: rgb(38, 38, 87);
+    text-align: center;
+}
+
+.pBlock {
+    background-color: rgb(36, 36, 69);
+    padding: 5px;
+    flex-direction: column;
+    border: 2px solid rgb(19, 19, 54);
+    border-radius: 10px;
+    width: 50%;
+}
+
+.searchBar {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 12pt;
+}
+
+.searchBtn {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 14pt;
+}

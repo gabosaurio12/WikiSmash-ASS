@@ -18,13 +18,13 @@ class PlayerDAO {
         }
     }
 
-    async getPlayerByUsername(searchUsername) {
+    async getPlayerByUsername(usernameSearch) {
         try {
-            const searchPlayer = await Player.findOne({
-                where: {username: searchUsername}
+            const playerSearch = await Player.findOne({
+                where: {username: usernameSearch}
             });
 
-            return searchPlayer;
+            return playerSearch;
         } catch (error) {
             console.error(error);
             return null;
@@ -48,7 +48,7 @@ class PlayerDAO {
                     username: updatedPlayer.username,
                     password: updatedPlayer.password,
                     main_id: updatedPlayer.main_id,
-                    secondary_id: updatedPlayer.secondary_id,
+                    secondary_id: updatedPlayer.secondary_id
                 },
                 { where: { id: updatedPlayer.id } }
             );
